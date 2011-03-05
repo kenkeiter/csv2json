@@ -1,0 +1,16 @@
+csv2json
+========
+
+Convert CSVs to JSON with ease! Excitement! Rainbows!
+
+csv2json will output either JSON objects (k=>v mappings), or just an array of 
+parsed rows. Simply add the -h flag to your command to indicate that the first row of your CSV contains column names, and your json will be outputted as an array of objects with k=>v mappings.
+
+For exmaple:
+
+ruby csv2json.rb -h csv_with_headers.csv:output.json
+ruby csv2json.rb -h csv_with_headers.csv:output1.json csv_with_headers2.csv:output2.json (make multiple conversions, all with headers)
+
+ruby csv2json.rb csv_no_headers.csv:output.json (will output array of rows)
+
+Use it wisely, soldier.
