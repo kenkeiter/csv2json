@@ -8,8 +8,9 @@ parsed rows. Simply add the -h flag to your command to indicate that the first r
 
 For exmaple:
 
-ruby csv2json.rb -h csv_with_headers.csv:output.json
-ruby csv2json.rb -h csv_with_headers.csv:output1.json csv_with_headers2.csv:output2.json (make multiple conversions, all with headers)
+ruby csv2json.rb -h -r csv_with_headers.csv:output.json
+ruby csv2json.rb -h -r csv_with_headers.csv:output1.json csv_with_headers2.csv:output2.json (make multiple conversions, all with headers)
+ruby csv2json.rb -h -r /path/to/dir/of/csvs (convert an entire dir of CSVs -- all files will be outputted in /path/to/dir/of/csvs with .json extension)
 
 ruby csv2json.rb csv_no_headers.csv:output.json (will output array of rows)
 
